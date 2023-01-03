@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMGN</title>
+    <link rel="stylesheet" href="css/loginForm.css" />
+    <link rel="icon" type="image/png"  href="images/favicon.ico"/>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo-box">
+        <a href="/"><img src="images/logo_moon_white.png" alt="amgn" /></a>
+      </div>
+    </div>
+    <div class="cover">
+      <div class="main">
+        <div class="content">
+          <div class="box left">
+            <div class="text"><h2>꿈을 이루는 첫 시작!</h2></div>
+            <div class="text">
+              <h2>
+                추천 알고리즘으로<br />
+                사용자 맞춤형 서비스를 제공하는 <br />AMGN(아무거나)입니다.
+              </h2>
+            </div>
+            <div class="moon">
+              <img src="images/bigdata3.png" alt="" />
+            </div>
+          </div>
+          <div class="box right">
+            <div class="id-cover">
+              <div class="id-box">
+                <div class="login-title"><h2>로그인</h2></div>
+
+                <div class="element">
+                  <form action="/login" method="POST">
+                    <div class="title email">
+                      <h2>아이디</h2>
+                    </div>
+                    <div class="email-input">
+                      <input
+                        name="username"
+                        class="input-box"
+                        type="text"
+                        placeholder="아이디를 입력해주세요"
+                        required
+                      />
+                    </div>
+                    <div class="title password">
+                      <h2>비밀번호</h2>
+                    </div>
+                    <div class="email-input">
+                      <input
+                        name="password"
+                        class="input-box"
+                        type="password"
+                        placeholder="비밀번호를 입력해주세요"
+                        required
+                      />
+                    </div>
+                    <button class="btn login"><span>로그인</span></button>
+                  </form>
+                  <a href="/joinForm"
+                    ><button class="btn signin">
+                      <span>회원가입</span>
+                    </button></a
+                  >
+                  <ul class="find_box">
+                    <li><a href="/" class="find_text">이메일 찾기</a></li>
+                    <li><a href="/" class="find_text">비밀번호 찾기</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

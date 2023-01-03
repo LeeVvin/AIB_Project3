@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+div {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 4.75rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-weight: 0.875rem;
+}
+.nav .logo-box {
+  display: flex;
+  height: 4.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.nav .logo-box a {
+  display: flex;
+  align-items: center;
+}
+.nav .logo-box img {
+  width: 13.5rem;
+  height: auto;
+}
+
+.cover {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.cover .main {
+  display: flex;
+  z-index: 1;
+}
+.cover .main .content {
+  width: 1000px;
+  height: 100%;
+  padding: 0 1.25rem;
+}
+.cover.header {
+  min-height: 50vh;
+  background: #191919;
+}
+.cover.header .main.header {
+  background: #fff;
+}
+.cover .main .container {
+  width: 900px;
+  height: 100%;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+.cover .main .container h2 {
+  padding: 150px 40px;
+  font-weight: 800;
+  font-size: 1.8rem;
+  font-family: "Jeju Gothic", sans-serif;
+}
+.cover.under {
+  background: #f6f8ff;
+}
+.cover.under .main.under {
+  background: #f6f8ff;
+}
+.cover.under .main.under .content .row {
+  padding: 50px 0 30px 0;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: black;
+  margin: 0 auto;
+}
+.cover.under .main.under .content .row img {
+  width: 240px;
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 80px;
+}
+table .title {
+  background-color: #252a38;
+  color: #fff;
+  font-family: "Jeju Gothic", sans-serif;
+}
+table .title td {
+  padding: 30px 50px;
+  font-weight: 600;
+}
+table .result {
+  background-color: #fff;
+  border-top: 8px solid #f6f8ff;
+}
+table .result:hover {
+  background-color: #efefefb9;
+}
+table .result td {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.box4 {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+.box4 .text1 {
+  padding-top: 70px;
+  font-size: 18px;
+  font-weight: 600;
+  color: grey;
+}
+.box4 .text2 {
+  font-size: 43px;
+  font-weight: 900;
+  color: black;
+}
+.box4 .text3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(161, 161, 161);
+  margin-top: 25px;
+}
+.box5 {
+  width: 100%;
+  height: 550px;
+  background-color: rgb(241, 241, 241);
+  margin: 0 auto;
+}
+.box6 {
+  width: 70%;
+  height: 550px;
+  margin: 0 auto;
+}
+.box6 .sub-box2 {
+  width: 26%;
+  height: 400px;
+  float: left;
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 5.5%;
+}
+.box6 .sub-box2 img {
+  width: 50px;
+  height: 55px;
+}
+.box6 .sub-box2 hr {
+  border: 3px solid rgb(71, 71, 71);
+}
+.box6 .sub-box2 .text1 {
+  padding-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+}
+.box6 .sub-box2 h1 {
+  font-size: 45px;
+  font-weight: 900;
+  color: black;
+}
+.box6 .sub-box2 .text2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(161, 161, 161);
+  margin-top: 15px;
+}
+.box6 .sub-box2 .text3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(161, 161, 161);
+  margin-top: 30px;
+}

@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+div {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 4.75rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-weight: 0.875rem;
+  /* border: 1px solid pink; */
+  box-shadow: 2px 5px 20px 2px rgb(243 243 243 / 64%);
+}
+.nav .logo-box {
+  display: flex;
+  height: 4.75rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.nav .logo-box a {
+  display: flex;
+  align-items: center;
+}
+.nav .logo-box img {
+  width: 13.5rem;
+  height: auto;
+}
+
+.headerBox {
+  display: flex;
+  width: 100%;
+  min-height: 45vh;
+  background-color: #fff;
+  justify-content: center;
+}
+.headerBox .mainBox {
+  display: flex;
+  background-color: #fff;
+  z-index: 1;
+}
+.headerBox .mainBox .content {
+  display: grid;
+  width: 1200px;
+  height: 100%;
+  padding: 0 1.25rem;
+  grid-template-columns: auto 468px;
+}
+.headerBox .mainBox .content .box {
+  position: relative;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.headerBox .mainBox .content .box.left {
+  align-items: flex-start;
+}
+.headerBox .mainBox .content .box.left .text h2 {
+  color: #000;
+  font-weight: 900;
+  font-size: 1.65rem;
+  line-height: 2.5rem;
+  padding: 180px 100px 180px 60px;
+}
+.headerBox .mainBox .content .box.right {
+  align-items: flex-end;
+}
+.headerBox .mainBox .content .box.right .imgBigdata {
+  position: absolute;
+  top: 45%;
+  margin: -150px 0 0 0;
+}
+.headerBox .mainBox .content .box.right .imgBigdata img {
+  width: 500px;
+  height: auto;
+}
+
+.cover {
+  display: flex;
+  width: 100%;
+  min-height: 120vh;
+  background: rgb(230, 230, 230);
+  justify-content: center;
+}
+.cover .main {
+  display: block;
+  background: rgb(230, 230, 230);
+  z-index: 1;
+}
+
+.cover .main .container {
+  width: 1200px;
+}
+.cover .main .container .questionBox {
+  width: 100%;
+  background-color: #fff;
+  padding: 15px 25px;
+  border: 5px solid rgb(134, 134, 134);
+  border-radius: 10px;
+}
+.cover .main .container .questionBox h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.cover .main .container .questionBox span {
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.questionBox.col-1 {
+  margin-top: 50px;
+}
+.questionBox.col-2,
+.questionBox.col-3 {
+  margin-top: 70px;
+}
+.questionBox.col-1 span {
+  color: #5736cd;
+}
+.questionBox.col-2 span {
+  color: #37b198;
+}
+.questionBox.col-3 span {
+  color: #db522c;
+}
+.color {
+  background-color: #fff;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+.selectBox select:hover {
+  cursor: pointer;
+}
+.selectBox select {
+  width: 100%;
+  height: 65px;
+  border-radius: 5px;
+  padding: 0 20px 0 20px;
+  border: 3px solid rgb(196, 195, 195);
+  font-weight: 500;
+  font-size: 1.1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg)
+    no-repeat 98% 50%;
+}
+select::-ms-expand {
+  opacity: 0;
+}
+.form_radio_btn {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #eae7e7;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.form_radio_btn input[type="radio"] {
+  display: none;
+}
+.form_radio_btn label {
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+  height: -webkit-fill-available;
+  line-height: 50px;
+}
+
+/* Hover */
+.form_radio_btn input[type="radio"]:hover + label {
+  background-color: rgba(224, 224, 224, 0.829);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* Checked */
+.form_radio_btn input[type="radio"]:checked + label {
+  background: #fef7da;
+  border: 3px solid #fee8a7;
+  color: #000;
+  font-weight: 800;
+}
+
+/* Disabled */
+.form_radio_btn input[type="radio"] + label {
+  background: #f9fafc;
+  color: rgb(157, 157, 157);
+  border: 3px solid rgb(196, 195, 195);
+}
+
+/* 제출버튼 */
+.btn {
+  display: block;
+  padding: 70px 0;
+}
+.btn .submitBtn {
+  position: relative;
+  width: 100%;
+  height: 60px;
+}
+button {
+  display: inline-block;
+  border: none;
+  width: 250px;
+  border-radius: 10px;
+  padding: 10px 30px 10px 30px;
+  background-color: #252a38;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+}
+.submitBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.submitBtn span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.submitBtn:hover span {
+  padding-right: 20px;
+}
+.submitBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}

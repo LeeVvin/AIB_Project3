@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMGN</title>
+    <link rel="stylesheet" href="css/certificateForm.css" />
+    <link rel="icon" type="image/png"  href="images/favicon.ico"/>
+  </head>
+  <body>
+    <!--
+      1. 가고싶은 분야(선택)
+      2. 받고싶은 연봉(선택)
+      3. 시험의 난이도(선택)
+      4. 합격가능성 <- 이건 보여주는 것
+    -->
+    <div class="nav">
+      <div class="logo-box">
+        <a href="/"><img src="images/logo_moon.png" alt="amgn" /></a>
+      </div>
+    </div>
+    <div class="headerBox">
+      <div class="mainBox">
+        <div class="content">
+          <div class="box left">
+            <div class="text">
+              <h2>
+                당신에게 딱 맞는 자격증 추천 가이드! <br />맞춤형 정보를
+                제공합니다.
+              </h2>
+            </div>
+          </div>
+          <div class="box right">
+            <div class="imgBigdata">
+              <img src="images/bigdata_bulb.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cover">
+      <div class="main">
+        <div class="container">
+          <form action="/choose" method="post">
+            <div class="questionBox col-1">
+              <h2><span>STEP 1.</span> 가고 싶은 분야를 선택하세요</h2>
+            </div>
+            <div class="color">
+              <div class="selectBox">
+                <select name="field" id="field" required>
+                  <option disabled selected>희망 분야를 선택하세요.</option>
+                  <option value="건축">건축</option>
+                  <option value="광해방지">광해방지</option>
+                  <option value="금속재료">금속재료</option>
+                  <option value="금형공작기계">금형공작기계</option>
+                  <option value="기계장비설비">기계장비설비</option>
+                  <option value="기계제작">기계제작</option>
+                  <option value="농업">농업</option>
+                  <option value="도시교통">도시교통</option>
+                  <option value="디자인">디자인</option>
+                  <option value="비파괴검사">비파괴검사</option>
+                  <option value="생산관리">생산관리</option>
+                  <option value="섬유">섬유</option>
+                  <option value="식품">식품</option>
+                  <option value="안전관리">안전관리</option>
+                  <option value="어업">어업</option>
+                  <option value="에너지기상">에너지기상</option>
+                  <option value="용접">용접</option>
+                  <option value="인쇄">인쇄</option>
+                  <option value="임업">임업</option>
+                  <option value="자동차">자동차</option>
+                  <option value="전기">전기</option>
+                  <option value="전자">전자</option>
+                  <option value="정보통신">정보통신</option>
+                  <option value="조경">조경</option>
+                  <option value="조선">조선</option>
+                  <option value="축산">축산</option>
+                  <option value="토목">토목</option>
+                  <option value="항공">항공</option>
+                  <option value="화공">화공</option>
+                  <option value="환경">환경</option>
+                  <option value="없음">없음</option>
+                </select>
+              </div>
+            </div>
+            <div class="questionBox col-2">
+              <h2><span>STEP 2.</span> 받고싶은 연봉을 선택하세요</h2>
+            </div>
+            <div class="color">
+              <div class="selectBox">
+                <select name="money" id="money" required>
+                  <option disabled selected>희망 연봉을 선택하세요.</option>
+                  <option value="2천만원대">2천만원대</option>
+                  <option value="3천초반대">3천초반대</option>
+                  <option value="3천중반대">3천중반대</option>
+                  <option value="3천후반대">2천만원대</option>
+                  <option value="4천초반대">4천초반대</option>
+                  <option value="4천중반대">4천중반대</option>
+                  <option value="4천후반대">4천후반대</option>
+                  <option value="5천초반대">5천초반대</option>
+                  <option value="5천중반대">5천중반대</option>
+                  <option value="5천후반대">5천후반대</option>
+                  <option value="6천초반대">6천초반대</option>
+                  <option value="6천중반대">6천중반대</option>
+                  <option value="없음">없음</option>
+                </select>
+              </div>
+            </div>
+            <div class="questionBox col-3">
+              <h2><span>STEP 3.</span> 시험의 난이도를 선택하세요.</h2>
+            </div>
+            <div class="mb-3">
+              <div
+                class="form_toggle row-vh d-flex flex-row justify-content-between"
+              >
+                <div class="form_radio_btn radio_male">
+                  <input
+                    id="radio-1"
+                    type="radio"
+                    name="revelTest"
+                    value="최하"
+                    checked
+                  />
+                  <label for="radio-1">최하</label>
+                </div>
+
+                <div class="form_radio_btn">
+                  <input
+                    id="radio-2"
+                    type="radio"
+                    name="revelTest"
+                    value="하"
+                  />
+                  <label for="radio-2">하</label>
+                </div>
+                <div class="form_radio_btn">
+                  <input
+                    id="radio-3"
+                    type="radio"
+                    name="revelTest"
+                    value="중하"
+                  />
+                  <label for="radio-3">중하</label>
+                </div>
+                <div class="form_radio_btn">
+                  <input
+                    id="radio-4"
+                    type="radio"
+                    name="revelTest"
+                    value="중"
+                  />
+                  <label for="radio-4">중</label>
+                </div>
+                <div class="form_radio_btn">
+                  <input
+                    id="radio-5"
+                    type="radio"
+                    name="revelTest"
+                    value="중상"
+                  />
+                  <label for="radio-5">중상</label>
+                </div>
+                <div class="form_radio_btn">
+                  <input
+                    id="radio-6"
+                    type="radio"
+                    name="revelTest"
+                    value="상"
+                  />
+                  <label for="radio-6">상</label>
+                </div>
+                <div class="form_radio_btn">
+                  <input
+                    id="radio-7"
+                    type="radio"
+                    name="revelTest"
+                    value="최상"
+                  />
+                  <label for="radio-7">최상</label>
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <button class="submitBtn"><span>제출하기</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

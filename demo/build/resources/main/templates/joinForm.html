@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>아무거나</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/join.js"></script>
+    <link rel="stylesheet" href="css/joinForm.css" />
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo-box">
+        <a href="/"><img src="images/logo_moon_white.png" alt="amgn" /></a>
+      </div>
+    </div>
+    <div class="cover">
+      <div class="main">
+        <div class="content">
+          <div class="box right">
+            <div class="id-cover">
+              <div class="id-box">
+                <div class="login-title"><h2>회원가입</h2></div>
+                <div class="element">
+                  <form method="POST" action="/join">
+                    <div class="title"><h2>아이디</h2></div>
+                    <div class="email-input">
+                      <input
+                        type="text"
+                        id="username"
+                        name="username"
+                        class="input-box"
+                        placeholder="아이디를 입력해주세요"
+                      />
+                      <div class="Error" name="userError" id="userError">
+                        <p>이름을 입력하세요.</p>
+                      </div>
+                    </div>
+                    <div class="title">
+                      <h2>이메일</h2>
+                    </div>
+                    <div class="email-input">
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="input-box"
+                        placeholder="이메일을 입력해주세요"
+                      />
+                      <div class="Error" name="emailError2" id="emailError2">
+                        <p>이메일을 입력하세요.</p>
+                      </div>
+                      <div class="Error" name="emailError" id="emailError">
+                        <p>이메일 형식이 맞지 않습니다.</p>
+                      </div>
+                    </div>
+                    <div class="title">
+                      <h2>비밀번호</h2>
+                    </div>
+                    <div class="email-input">
+                      <input
+                        name="password"
+                        class="input-box"
+                        type="password"
+                        id="password"
+                        placeholder="영문자, 숫자, 특수문자 포함 최소 8-20자"
+                        required
+                      />
+                      <input
+                        name="passwordCheck"
+                        class="input-box check"
+                        type="password"
+                        id="passwordCheck"
+                        placeholder="비밀번호를 확인해주세요"
+                        required
+                      />
+                      <div class="Error" name="pwError" id="pwError">
+                        <p>비밀번호가 일치하지 않습니다.</p>
+                      </div>
+                    </div>
+                    <div class="title">
+                      <h2>생년월일</h2>
+                    </div>
+                    <div class="email-input">
+                      <input
+                        type="date"
+                        id="birth"
+                        name="birth"
+                        data-placeholder="날짜 선택"
+                        class="input-box"
+                      />
+                      <div class="Error" name="birthError" id="birthError">
+                        <p>생년월일을 입력하세요.</p>
+                      </div>
+                    </div>
+                    <div class="title">
+                      <h2>전화번호</h2>
+                    </div>
+                    <div class="email-input">
+                      <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        maxlength="13"
+                        class="input-box"
+                        placeholder="010-1234-5678"
+                        oninput="oninputPhone(this)"
+                      />
+                      <div class="Error" name="phoneError" id="phoneError">
+                        <p>전화번호를 입력하세요.</p>
+                      </div>
+                    </div>
+
+                    <div class="title">
+                      <h2>성별</h2>
+                    </div>
+                    <div class="email-input">
+                      <select name="gender" id="gender" class="radioBox">
+                        <option disabled selected>성별을 선택하세요</option>
+                        <option value="male">남자</option>
+                        <option value="female">여자</option>
+                        <option value="null">선택안함</option>
+                      </select>
+                      <div class="Error" name="genderError" id="genderError">
+                        <p>성별을 입력하세요.</p>
+                      </div>
+                    </div>
+                    <div class="title">
+                      <h2>거주지역</h2>
+                    </div>
+                    <div class="email-input">
+                      <select
+                        name="address"
+                        id="address"
+                        name="address"
+                        class="radioBox"
+                      >
+                        <option disabled selected>거주지역을 선택하세요</option>
+                        <option value="02">서울</option>
+                        <option value="031">경기</option>
+                        <option value="032">인천</option>
+                        <option value="033">강원</option>
+                        <option value="041">충남</option>
+                        <option value="042">대전</option>
+                        <option value="043">충북</option>
+                        <option value="051">부산</option>
+                        <option value="052">울산</option>
+                        <option value="053">대구</option>
+                        <option value="054">경북</option>
+                        <option value="055">경남</option>
+                        <option value="061">전남</option>
+                        <option value="062">광주</option>
+                        <option value="063">전북</option>
+                        <option value="064">제주</option>
+                      </select>
+                      <div class="Error" name="addError" id="addError">
+                        <p>거주지역을 입력하세요.</p>
+                      </div>
+                    </div>
+                    <div class="title">
+                      <h2>학력</h2>
+                    </div>
+                    <div class="email-input">
+                      <select name="education" id="education" class="radioBox">
+                        <option disabled selected>최종학력을 선택하세요</option>
+                        <option value="high_gradu">고등학교</option>
+                        <option value="univ">대학교</option>
+                      </select>
+                      <div class="Error" name="eduError" id="eduError">
+                        <p>최종학력을 입력하세요.</p>
+                      </div>
+                    </div>
+                    <div id="selboxDirect" name="selboxDirect">
+                      <div class="title">
+                        <h2>상태</h2>
+                      </div>
+                      <div class="email-input">
+                        <select class="radioBox" name="status" id="status">
+                          <option disabled selected>상태를 선택하세요</option>
+                          <option value="univ_ing">재학중</option>
+                          <option value="univ">졸업예정</option>
+                          <option value="univ_gradu">졸업</option>
+                        </select>
+                        <div class="Error" name="statusError" id="statusError">
+                          <p>상태를 선택하세요.</p>
+                        </div>
+                      </div>
+                      <div class="title">
+                        <h2>대학교</h2>
+                      </div>
+                      <div class="email-input">
+                        <input
+                          type="text"
+                          id="university"
+                          name="university"
+                          class="input-box"
+                          placeholder="영남대학교"
+                        />
+                        <div class="Error" name="univError" id="univError">
+                          <p>대학교를 입력하세요.</p>
+                        </div>
+                      </div>
+                      <div class="title">
+                        <h2>학과</h2>
+                      </div>
+                      <div class="email-input">
+                        <input
+                          type="text"
+                          id="department"
+                          name="department"
+                          class="input-box"
+                          placeholder="정보통신공학과"
+                        />
+                        <div class="Error" name="deError" id="deError">
+                          <p>학과를 입력하세요.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="title">
+                      <h2>MBTI</h2>
+                    </div>
+                    <div class="email-input">
+                      <select name="mbti" id="mbti" class="radioBox">
+                        <option disabled selected>MBTI를 선택하세요</option>
+                        <option value="ISTJ">ISTJ</option>
+                        <option value="ISFJ">ISFJ</option>
+                        <option value="INFJ">INFJ</option>
+                        <option value="INTJ">INTJ</option>
+                        <option value="ISTP">ISTP</option>
+                        <option value="ISFP">ISFP</option>
+                        <option value="INFP">INFP</option>
+                        <option value="INTP">INTP</option>
+                        <option value="ESTP">ESTP</option>
+                        <option value="ESFP">ESFP</option>
+                        <option value="ENFP">ENFP</option>
+                        <option value="ENTP">ENTP</option>
+                        <option value="ESTJ">ESTJ</option>
+                        <option value="ESFJ">ESFJ</option>
+                        <option value="ENFJ">ENFJ</option>
+                        <option value="ENTJ">ENTJ</option>
+                        <option value="none">선택안함</option>
+                      </select>
+                      <div class="Error" name="mbtiError" id="mbtiError">
+                        <p>mbti을 입력하세요.</p>
+                      </div>
+                    </div>
+                    <button class="btn" id="submit"><span>다음</span></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

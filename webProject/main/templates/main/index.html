@@ -1,0 +1,107 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AMGN</title>
+    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <link rel="stylesheet" href="{%static 'css/index.css'%}" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo-box">
+        <a href="/"
+          ><img src="{%static 'images/logo_moon.png'%}" alt="amgn"
+        /></a>
+      </div>
+    </div>
+    <div class="cover header">
+      <img src="{%static 'images/background.png'%}" alt="" />
+    </div>
+    <div class="cover under">
+      <div class="main under">
+        <div class="content">
+          <div class="row">
+            <img src="{%static 'images/dataTitle.png'%}" alt="" />
+          </div>
+          <table>
+            <tr class="title">
+              <td>종목명</td>
+              <td>분야</td>
+              <td>기사명</td>
+              <td>연봉</td>
+              <td>난이도</td>
+              <td>합격률</td>
+            </tr>
+            {%for i in df%}
+            <tr class="result">
+              {%for a in i%}
+              <td>{{a}}</td>
+              {%endfor%}
+            </tr>
+            {%endfor%}
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="box4">
+      <p class="text1">당신을 위한 추천시스템</p>
+      <h1 class="text2">고객 전용 맞춤형 추천 서비스</h1>
+      <p class="text3">
+        넷플릭스와 유튜브 등에서 사용되는 추천시스템을 기반으로 하여, AMGN만의
+        맞춤시스템을 구현하여
+        <br />여러분의 관심과 분야에 맞는 자격증과 시험을 추천해드립니다.
+      </p>
+    </div>
+    <div class="box5">
+      <div class="box6">
+        <div class="sub-box2">
+          <img src="{%static 'images/box5_hand.png'%}" alt="hand_logo" />
+          <hr />
+          <p class="text1">후원기관</p>
+          <h1>2</h1>
+          <p class="text2">
+            AMGN를 지원해주는 후원기관 입니다<br />많은 도움 부탁드립니다
+          </p>
+          <p class="text3">
+            여러분에게 더 정확한 시스템을 제공하기 위해 AMGN를 도와주시는
+            분들입니다.<br />많은 관심 부탁드립니다.
+          </p>
+        </div>
+        <div class="sub-box2">
+          <img src="{%static 'images/box5_book.png'%}" alt="book_logo" />
+          <hr />
+          <p class="text1">이용자 만족도</p>
+          <h1>90%</h1>
+          <p class="text2">
+            AMGN 이용자의 만족도 입니다.<br />설문조사를 기반으로 분석합니다.
+          </p>
+          <p class="text3">
+            저희 AMGN는 여러분의 최상의 만족도를 얻기위해 최선을 다해 노력하고
+            있습니다. 최고의 시스템을 제공하기 위해 노력하겠습니다.
+          </p>
+        </div>
+        <div class="sub-box2">
+          <img src="{%static 'images/box5_bigdata.png'%}" alt="bigdata_logo" />
+          <hr />
+          <p class="text1">시스템 정확도</p>
+          <h1>99%</h1>
+          <p class="text2">
+            사용자 기반 추천 시스템의 정확도입니다.<br />여러분에게 맞는 정보를
+            제공합니다.
+          </p>
+          <p class="text3">
+            각 사용자의 데이터를 기반으로 추천해드립니다. 정확한 정보를
+            제공하도록 언제나 노력하겠습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
